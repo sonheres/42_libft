@@ -1,2 +1,4 @@
 **/output
 .gitignore
+*.dSYM/*
+ft_print_numbers
