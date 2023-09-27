@@ -6,14 +6,15 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:43:23 by sonheres          #+#    #+#             */
-/*   Updated: 2023/09/27 11:22:06 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/09/27 11:24:22 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-void	*bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
+
 {
 	char	*r;
 	size_t	i;
