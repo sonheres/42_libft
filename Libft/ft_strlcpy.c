@@ -6,24 +6,68 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:00:28 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/03 13:07:16 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/03 14:35:03 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize) // Devuelve el tamaño de la cadena de origen. Da igual el tamaño de las cadenas.
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	len_src;//contador cadena origen.
-	size_t	cont;//valor para copiar.
-	
+	size_t	len_src;
+	size_t	cont;
+
 	len_src = 0;
-	while	(src[len_src] != '\0')//mientras el valor de la cadena de origen no sea el valor nulo...
+	while (src[len_src] != '\0')
+	{
+		len_src++;
+	}
+	if (dstsize == 0)
+	{
+		return (len_src);
+	}
+	cont = 0;
+	while (src[cont] != '\0' && cont < dstsize -1)
+	{
+		dst[cont] = src[cont];
+		cont++;
+	}
+	dst[cont] = '\0';
+	return (len_src);
+}
+
+int	main(void)
+{
+	char	cad_src[] = "Cuentame un cuento por favor";
+	char	cad_dst[50];
+	char	mycad_dst[20];
+	size_t	copy;
+	size_t	mycopy;
+
+	copy = strlcpy(cad_dst, cad_src, 50);
+	printf("original copy = %lu\n", copy);
+	printf("original cad_dest = %s\n", cad_dst);
+	mycopy = ft_strlcpy(mycad_dst, cad_src, 60);
+	printf("propia mycopy = %lu\n", mycopy);
+	printf("propia mycad_dest = %s\n", mycad_dst);
+	return (0);
+}
+
+/* Devuelve el tamaño de la cadena de origen.
+
+Da igual el tamaño de las cadenas. Para comprobar el contenido printf (%s), cadena destino.
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+	size_t	len_src; // contador cadena origen.
+	size_t	cont;// valor para copiar.
+	len_src = 0;
+	while	(src[len_src] != '\0') // mientras el valor de la cadena de origen no sea el valor nulo...
 	{
 		len_src++;//cuenta.
-	}	
-	if (dstsize == 0)//Y si el tamaño de la cadena de destino es 0...
+	}
+	if (dstsize == 0)//Y si el tamaño de la cadena de destino es 0...	
 	{
 		return (len_src);//No hay que copiar nada. Simplemente devolver la longitud)
 	}
@@ -35,7 +79,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize) // Devuelve el tam
 	}
 	dst[cont] = '\0';//acaba con el valor nulo.
 	return (len_src);//devuelve el contador de la cadena de origen.
-}
+
 
 int	main(void)
 {
@@ -46,10 +90,10 @@ int	main(void)
 	size_t	mycopy;//esta variable guarda los caracteres de mi función,
 	
 	copy = strlcpy(cad_dst, cad_src, 50);//asigno valor a la variable original. 50 es el tamaño de caracteres que voy a pasar.
-	printf("original copy = %d\n", copy);// imprime el número de caracteres de la cadena de origen. %d números.
+	printf("original copy = %lu\n", copy);// imprime el número de caracteres de la cadena de origen. %lu para datos de tipo size_t.
 	printf("original cad_dest = %s\n", cad_dst);// imprime los caracteres que se han copiado. %s porque es string.
 	mycopy = ft_strlcpy(mycad_dst, cad_src, 60);// No da error a pesar de que quiero copiar más de 20 caracteres.
-	printf("propia mycopy = %d\n", mycopy);
+	printf("propia mycopy = %lu\n", mycopy);
 	printf("propia mycad_dest = %s\n", mycad_dst);
 	return (0);
-}
+}*/
