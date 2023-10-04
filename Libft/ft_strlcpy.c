@@ -6,13 +6,13 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:00:28 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/03 14:35:03 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/03 18:52:34 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
-
+//REVISAR EDGE CASES ANTES DE LA ENTREGA!!!
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len_src;
