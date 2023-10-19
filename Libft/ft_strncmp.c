@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:55:21 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/17 14:15:37 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/19 09:58:52 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 
 
-COMPARA LOS CARACTERES DE DOS CADENAS.
+COMPARA LOS CARACTERES DE DOS CADENAS. Siempre van a pasar strings.
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n) // n es un valor constante. Es el tope. 
 {
