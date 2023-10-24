@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:46:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/03 19:12:00 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/04 14:05:36 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (len_src + len_dst);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	cad_src[] = "PIL";
 	char	cad_dst[20] = "PACO";
@@ -58,8 +58,8 @@ int	main(void)
 	return (0);
 }
 
-/*copia una cadena de origen en el final de una cadena de destino. 
-//Devuelve la longitud de la suma de las dos cadenas.
+copia una cadena de origen en el final de una cadena de destino. 
+Devuelve la longitud de la suma de las dos cadenas.
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len_src; 						//declaro una variable que recorre el array de origen y devuelve su longitud.

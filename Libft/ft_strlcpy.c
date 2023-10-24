@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:00:28 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/03 18:52:34 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/04 12:53:57 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 int	main(void)
 {
-	char	cad_src[] = "Cuentame un cuento por favor";
+	char	cad_src[]= "Cuentame un cuento por favor";
 	char	cad_dst[50];
 	char	mycad_dst[20];
 	size_t	copy;
