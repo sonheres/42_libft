@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 19:10:32 by sonheres          #+#    #+#             */
-/*   Updated: 2023/09/22 19:27:43 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/26 12:01:36 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_isprint(int c)
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	print;
 
@@ -33,4 +33,4 @@ int	main(void)
 	printf("original: %i\n", isprint(print));
 	printf("propia: %i\n", ft_isprint(print));
 	return (0);
-}
+}*/

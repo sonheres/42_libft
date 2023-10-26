@@ -6,13 +6,28 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:46:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/04 14:05:36 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/10/26 13:47:41 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
-
+/* copia una cadena de origen en el final de una cadena de destino. 
+Devuelve la longitud de la suma de las dos cadenas.
+//declaro una variable que recorre el array de origen y devuelve su longitud
+//declaro una variable que recorre el array de destino y devuelve su longitud
+//declaro una variable para copiar el array de destino.
+//declaro una variable para copiar el array de origen.
+//inicializo para recorrer la cadena de destino. [PACO]
+//mientras que no encuentre el fin de cadena...
+//adelante.
+//inicializo para recorrer la cadena de origen. [PIL]
+//mientras que no encuentre el fin de cadena...
+//se posiciona al principio del array de origen.
+//se posiciona al final del array de origen. 
+si dejo len_dst -1 no imprime la última letra [PACPIL]
+//mientras origen de i no sea el valor nulo y j sea menor o igual que dstsize...
+//asiga a j en destino el valor de i en el array de origen.*/
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len_src;
@@ -58,45 +73,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (0);
 }
 
-copia una cadena de origen en el final de una cadena de destino. 
-Devuelve la longitud de la suma de las dos cadenas.
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	len_src; 						//declaro una variable que recorre el array de origen y devuelve su longitud.
-	size_t	len_dst; 						//declaro una variable que recorre el array de destino y devuelve su longitud.
-	size_t	i;								//declaro una variable para copiar el array de origen.							//declaro una variable para copiar el array de destino.
-	size_t	j;								//declaro una variable para copiar el array de origen.			
-
-	len_dst = 0; 							//inicializo para recorrer la cadena de destino. [PACO]
-	while (dst[len_dst] != '\0') 			//mientras que no encuentre el fin de cadena...
-	{
-		len_dst++; 							//adelante.
-	}
-	len_src = 0; 							//inicializo para recorrer la cadena de origen. [PIL]
-	while (src[len_src] != '\0') 			//mientras que no encuentre el fin de cadena...
-	{
-		len_src++;
-	}
-	i = 0;									//se posiciona al principio del array de origen.
-	j = len_dst; 							//se posiciona al final del array de origen. si dejo len_dst -1 no imprime la última letra [PACPIL]
-	while (src[i] != '\0' && j <= dstsize) 	//mientras origen de i no sea el valor nulo y j sea menor o igual que dstsize...
-	{
-		dst[j] = src[i];					//asiga a j en destino el valor de i en el array de origen.
-		i++;
-		j++;
-	}
-	return (len_src + len_dst);
-}
-
 int	main(void)
 {
 	char	cad_src[] = "PIL";
 	char	cad_dst[20] = "PACO";
-	char	mycad_dst[20] = "PACO";			// declaro un array propio en destino para que lo haga con mi función.
-	char	cad_total;						// declaro una variable para que recoja el resultado de la función original.
-	char	mycad_total;					// declaro una variable para que recoja el resultado de la función propia.
+	char	mycad_dst[20] = "PACO";	// declaro un array propio en destino 
+									para que lo haga con mi función.
+	char	cad_total;				// declaro una variable para que recoja 
+									el resultado de la función original.
+	char	mycad_total;			// declaro una variable para que recoja 
+									el resultado de la función propia.
 	
-	cad_total = strlcat(cad_dst, cad_src, 20);		//dstsize =20 para que tenga longitud de sobra sumando las dos.
+	cad_total = strlcat(cad_dst, cad_src, 20);		//dstsize =20 para que tenga 
+													longitud de sobra sumando las dos.
 	printf("original : %lu\n", cad_total);			//imprime la longitud todal (%lu)
 	printf("original cad_dest = %s\n", cad_dst);	//imprime el contenido (%s)
 	mycad_total = ft_strlcat(mycad_dst, cad_src, 20);

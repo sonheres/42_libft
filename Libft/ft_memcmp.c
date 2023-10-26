@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 18:37:01 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/19 10:47:05 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/26 12:26:05 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,9 @@ int	main (void)
 }
 
 //COMPARA (n) ÁREAS DE MEMORIA (bytes). 'Strnmp' compara caracteres (ascii).
-int ft_memcmp(const void *s1, const void *s2, size_t n) //Me pueden pasar cualquier cosa. Por eso es 'void' y no 'char'
+int ft_memcmp(const void *s1, const void *s2, size_t n) 
+//Me pueden pasar cualquier cosa. 
+Por eso es 'void' y no 'char'
 {
 	size_t	i;
 	const unsigned char   *s1bis;
@@ -86,7 +88,9 @@ int ft_memcmp(const void *s1, const void *s2, size_t n) //Me pueden pasar cualqu
 	{
 		if (s1bis[i] != s2bis[i])
 		{
-			return ((int)(s1bis[i] - s2bis[i])); //cast a para que devuelva un 'int' porque s1bis y s2bis son unsigned char.
+			return ((int)(s1bis[i] - s2bis[i])); 
+			//cast a para que devuelva un 'int' 
+			porque s1bis y s2bis son unsigned char.
 		}
 		else
 		{

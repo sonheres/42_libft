@@ -6,7 +6,7 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:44:34 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/04 13:59:53 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/10/26 12:27:20 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char	*r;
+	char		*r;
 	const char	*d;
-	size_t	i;
+	size_t		i;
 
 	r = dst;
 	d = src;
@@ -28,7 +28,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		r[i] = d[i];
 		i++;
 	}
-	return(dst);
+	return (dst);
 }
 
 /*int	main(void)

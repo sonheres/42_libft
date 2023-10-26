@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 18:28:13 by sonheres          #+#    #+#             */
-/*   Updated: 2023/09/22 18:32:38 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/26 12:01:26 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_isdigit(int c)
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	digito;
 
@@ -33,4 +33,4 @@ int	main(void)
 	printf("original: %i\n", isdigit(digito));
 	printf("propia: %i\n", ft_isdigit(digito));
 	return (0);
-}
+}*/
