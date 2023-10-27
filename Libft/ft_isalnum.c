@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 18:35:07 by sonheres          #+#    #+#             */
-/*   Updated: 2023/09/22 18:42:05 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/26 13:33:40 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_isalnum(int c)
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	charnum;
 
@@ -34,4 +34,4 @@ int	main(void)
 	printf("original: %i\n", isalnum(charnum));
 	printf("propia: %i\n", ft_isalnum(charnum));
 	return (0);
-}
+}*/

@@ -1,4 +1,6 @@
 **/output
-.gitignore
+.DS_Store
 *.dSYM/*
-ft_print_numbers
+.vscode
+.o
+.a

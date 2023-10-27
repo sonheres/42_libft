@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:17:02 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/17 18:34:16 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/10/26 12:16:25 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*
-
-int main(void)
+/*int main(void)
 {
 	char cadena[] = "parafarmacia";
 	char cadena_ft[] = "parafarmacia";
@@ -48,11 +46,11 @@ int main(void)
 	printf("propia :%s\n", myresult);
 	return (0);
 }
+*/
 
+/*DEVUELVE UN PUNTERO DE 'c' EN UN STRING.*/
 
-DEVUELVE UN PUNTERO DE 'c' EN UN STRING.
-
-void *ft_memchr(const void *s, int c, size_t n)
+/*void *ft_memchr(const void *s, int c, size_t n)
 {
 	const char	*str;
 	size_t i;
@@ -64,7 +62,9 @@ void *ft_memchr(const void *s, int c, size_t n)
 	{
 		if (str[i] == c)
 		{
-			return ((void *)(str + i)); // He hecho un cast(void *) para que interprete void * en lugar de char *. str es el puntero inicial (p)arafarmacia + el contador (i). 
+			return ((void *)(str + i)); // He hecho un cast(void *) 
+			para que interprete void * en lugar de char *. str es el 
+			puntero inicial (p)arafarmacia + el contador (i). 
 		}
 		else
 		{
