@@ -6,12 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 13:40:47 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/26 12:45:45 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/02 13:32:49 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 /* Devuelve la cadena desde la primera posición donde 
 se encuentra la letra que metemos como parámetro.
 //const char* quiere decir que es un string de solo lectura.
@@ -23,12 +22,12 @@ nunca < y > porque el '\0' es cero.
 Y transformo el resultado en un string de tipo char **/
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (i <= ft_strlen(s))
 	{
-		if (s[i] == c)
+		if (s[i] == (unsigned char)c)
 		{
 			return ((char *)(s + i));
 		}
@@ -37,7 +36,7 @@ char	*ft_strchr(const char *s, int c)
 			i++;
 		}
 	}
-	return (0);
+	return (NULL);
 }
 /*int	main(void)
 {

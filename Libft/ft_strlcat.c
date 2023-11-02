@@ -6,7 +6,7 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:46:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/26 13:47:41 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/02 12:59:37 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,43 +53,35 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		i++;
 		j++;
 	}
+		dst[j] = '\0';
+
 	return (len_src + len_dst);
 }
+/*
+//declaro un array propio en destino para que lo haga con mi función.
+mycad_dst[20] = "PACO";
+//declaro una variable para que recoja el resultado de la función propia.
+mycad_total;
+//dstsize =20 para que tenga longitud de sobra sumando las dos.
+cad_total = strlcat(cad_dst, cad_src, 20);
+//imprime la longitud todal (%lu)
+printf("original : %lu\n", cad_total);
+//imprime el contenido (%s)
+printf("original cad_dest = %s\n", cad_dst);
+*/
 
-/*int	main(void)
-{
-	char	cad_src[] = "PIL";
-	char	cad_dst[20] = "PACO";
-	char	mycad_dst[20] = "PACO";
-	char	cad_total;						
-	char	mycad_total;					
-	
-	cad_total = strlcat(cad_dst, cad_src, 20);
-	printf("original : %lu\n", cad_total);
-	printf("original cad_dest = %s\n", cad_dst);
-	mycad_total = ft_strlcat(mycad_dst, cad_src, 20);
-	printf("propia : %lu\n", mycad_total);
-	printf("propia mycad_dest = %s\n", mycad_dst);
-	return (0);
-}
-
-int	main(void)
-{
-	char	cad_src[] = "PIL";
-	char	cad_dst[20] = "PACO";
-	char	mycad_dst[20] = "PACO";	// declaro un array propio en destino 
-									para que lo haga con mi función.
-	char	cad_total;				// declaro una variable para que recoja 
-									el resultado de la función original.
-	char	mycad_total;			// declaro una variable para que recoja 
-									el resultado de la función propia.
-	
-	cad_total = strlcat(cad_dst, cad_src, 20);		//dstsize =20 para que tenga 
-													longitud de sobra sumando las dos.
-	printf("original : %lu\n", cad_total);			//imprime la longitud todal (%lu)
-	printf("original cad_dest = %s\n", cad_dst);	//imprime el contenido (%s)
-	mycad_total = ft_strlcat(mycad_dst, cad_src, 20);
-	printf("propia : %lu\n", mycad_total);
-	printf("propia mycad_dest = %s\n", mycad_dst);
-	return (0);
-}*/
+// int	main(void)
+// {
+// 	char	cad_src[] = "puri";
+// 	char	cad_dst[11] = "mari";
+// 	char	mycad_dst[11] = "mari";	
+// 	char	cad_total;				
+// 	char	mycad_total;			
+// 	cad_total = strlcat(cad_dst, cad_src, 15);
+// 	printf("original : %lu\n", cad_total);
+// 	printf("original cad_dest = %s\n", cad_dst);
+// 	mycad_total = ft_strlcat(mycad_dst, cad_src, 15);
+// 	printf("propia : %lu\n", mycad_total);
+// 	printf("propia mycad_dest = %s\n", mycad_dst);
+// 	return (0);
+// }
