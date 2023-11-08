@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 13:40:47 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/02 13:32:49 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/07 17:33:16 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <string.h>
+#include "Libft.h"
 /* Devuelve la cadena desde la primera posición donde 
 se encuentra la letra que metemos como parámetro.
 //const char* quiere decir que es un string de solo lectura.
