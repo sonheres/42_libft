@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:23:52 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/10 18:58:46 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/16 17:36:47 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ y mientras coincidad la letra con el parámetro (char_in_str) adelante.
 Lo mismo pero desde el final. 
 Inicializo 'fin' ->  fin = ft_strlen(s1) - 1; // porque empieza en 0
 while(fin >= 0 ...)-> para que el valor de fin no sea negativo.
-Si me pasan cadena vacía o si coinciden todas las letras y recorre hasta el inicio.
+Si me pasan cadena vacía o si coinciden todas las letras y recorre hasta inicio.
 ft_strlen = 0. El valor de 'fin' sería 0 -1 = -1 
 Devuelver la función ft_substr con sus parámetros. len será = fin - ini + 1 */
 int	char_in_str(char c, char	const	*set)
@@ -67,7 +67,7 @@ char	*ft_strtrim(char	const	*s1, char	const	*set)
 	if (fin <= ini)
 	{
 		return ("");
-	}	
+	}
 	else
 		return (ft_substr(s1, ini, fin - ini + 1));
 }
