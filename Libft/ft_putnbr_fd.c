@@ -6,12 +6,12 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:39:45 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/19 20:26:26 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/20 17:59:01 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Libft.h"
-#include <fcntl.h>
+/* #include <fcntl.h> */
 /* Envía el número ’n’al file descriptor dado.
 PARÁMETROS: El número 'n' que enviar. Y el 'fd' sobre el q. escribir.
 FT_CONVERT: Convierte el 'n' en 'char'.

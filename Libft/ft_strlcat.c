@@ -3,59 +3,55 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:46:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/02 12:59:37 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/21 12:59:24 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
-/* copia una cadena de origen en el final de una cadena de destino. 
-Devuelve la longitud de la suma de las dos cadenas.
-//declaro una variable que recorre el array de origen y devuelve su longitud
-//declaro una variable que recorre el array de destino y devuelve su longitud
-//declaro una variable para copiar el array de destino.
-//declaro una variable para copiar el array de origen.
-//inicializo para recorrer la cadena de destino. [PACO]
-//mientras que no encuentre el fin de cadena...
-//adelante.
-//inicializo para recorrer la cadena de origen. [PIL]
-//mientras que no encuentre el fin de cadena...
-//se posiciona al principio del array de origen.
-//se posiciona al final del array de origen. 
-si dejo len_dst -1 no imprime la última letra [PACPIL]
-//mientras origen de i no sea el valor nulo y j sea menor o igual que dstsize...
-//asiga a j en destino el valor de i en el array de origen.*/
+/* Si la cadena a la que apunta input es controlada por el usuario 
+y no existe ningún límite en el número de caracteres  al usar la función strcat 
+acabaremos sobrepansando el tamaño de buf, y escribiendo en direcciones de 
+memoria que no se debe. el parámetro dstsize especifica el número de bytes del 
+búfer apuntado por s1. Así se copiará como máximo n bytes o bien si encuentra 
+el carácter fin de cadena.
+> while (src[res] != '\0')//coloca el contador res al final
+> while (dst[i] != '\0')//calcula la longitud de dst
+> i3 = i;//asigna valor de 'i' a i3 porque luego cambia valor 'i'
+> if (dstsize > res + i)//si dstsize es mayor, para saber si cabe
+> dstsize = res + i + 1;//añade fin de cadena
+> while (src[i2] != '\0' && i < dstsize - 1 && dstsize > 0)//i = long(dst)
+> if (dstsize + res > res + i3)//si tope + origen > origen + destino (si cabe)
+> return (res + i3);//devolver origen + destino
+> return (res + dstsize);//devuelve origen + cabe en el tope
+*/
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	len_src;
-	size_t	len_dst;
 	size_t	i;
-	size_t	j;
+	size_t	i2;
+	size_t	i3;
+	size_t	res;
 
-	len_dst = 0;
-	while (dst[len_dst] != '\0')
-	{
-		len_dst++;
-	}
-	len_src = 0;
-	while (src[len_src] != '\0')
-	{
-		len_src++;
-	}
 	i = 0;
-	j = len_dst;
-	while (src[i] != '\0' && j <= dstsize)
-	{
-		dst[j] = src[i];
+	i2 = 0;
+	res = 0;
+	while (src[res] != '\0')
+		res++;
+	while (dst[i] != '\0')
 		i++;
-		j++;
-	}
-		dst[j] = '\0';
-
-	return (len_src + len_dst);
+	i3 = i;
+	if (dstsize > res + i)
+		dstsize = res + i + 1;
+	while (src[i2] != '\0' && i < dstsize - 1 && dstsize > 0)
+		dst[i++] = src[i2++];
+	dst[i] = '\0';
+	if (dstsize + res > res + i3)
+		return (res + i3);
+	return (res + dstsize);
 }
 /*
 //declaro un array propio en destino para que lo haga con mi función.
@@ -69,19 +65,18 @@ printf("original : %lu\n", cad_total);
 //imprime el contenido (%s)
 printf("original cad_dest = %s\n", cad_dst);
 */
-
-// int	main(void)
-// {
-// 	char	cad_src[] = "puri";
-// 	char	cad_dst[11] = "mari";
-// 	char	mycad_dst[11] = "mari";	
-// 	char	cad_total;				
-// 	char	mycad_total;			
-// 	cad_total = strlcat(cad_dst, cad_src, 15);
-// 	printf("original : %lu\n", cad_total);
-// 	printf("original cad_dest = %s\n", cad_dst);
-// 	mycad_total = ft_strlcat(mycad_dst, cad_src, 15);
-// 	printf("propia : %lu\n", mycad_total);
-// 	printf("propia mycad_dest = %s\n", mycad_dst);
-// 	return (0);
-// }
+/* int	main(void)
+{
+	char	cad_src[] = "abcdefghi";
+	char	cad_dst[50] = "pqrs";
+	char	mycad_dst[50] = "pqrs";	
+	char	cad_total;				
+	char	mycad_total;			
+	cad_total = strlcat(cad_dst, cad_src, 10);
+	printf("original : %hhd\n", cad_total);
+	printf("original cad_dest = %s\n", cad_dst);
+	mycad_total = ft_strlcat(mycad_dst, cad_src, 10);
+	printf("propia : %hhd\n", mycad_total);
+	printf("propia mycad_dest = %s\n", mycad_dst);
+ 	return (0);
+}  */

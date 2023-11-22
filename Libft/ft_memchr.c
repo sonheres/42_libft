@@ -3,16 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:17:02 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/26 12:16:25 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/21 07:46:34 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
+/* La función memchr() localiza la primera aparición de c 
+(convertida a un archivo sin signo).
+     char) en la cadena s.
 
+
+ */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const char	*str;
@@ -22,16 +27,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (str[i] == c)
-		{
-			return ((void *)(str + i));
-		}
-		else
-		{
-			i++;
-		}
+		if (((unsigned char *)str)[i] == (unsigned char)c)
+			return ((void *) &((unsigned char *)str)[i]);
+		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
 /*int main(void)

@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 09:14:37 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/14 17:30:52 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/21 10:57:06 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,13 +57,36 @@ static size_t	ft_numlen(int n)
 	return (nlen);
 }
 
+static char	*ft_duplistr(const char *s1)
+{
+	char	*copy;
+	int		i;
+
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+	copy = (char *) malloc (sizeof(char) * i + 1);
+	if (copy == NULL)
+		return (NULL);
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		copy[i] = s1[i];
+		i++;
+	}
+	copy[i] = '\0';
+	return (copy);
+}
+
 static	char	*ft_reverse(char	*str)
 {
 	int		i;
 	int		d;
 	char	*dup;
 
-	dup = ft_strdup(str);
+	dup = ft_duplistr(str);
+	if (dup == NULL)
+		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -119,7 +142,7 @@ char	*ft_itoa(int n)
 {
 	int	n;
 
-	n = 1000034;
+	n = 0;
 	printf ("El número es: %s\n", ft_itoa(n));
 	return (0);
 } */

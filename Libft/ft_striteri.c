@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:37:57 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/16 20:33:39 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/20 18:20:38 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,16 @@
 que podrá modificarse si es necesario.
 NO DEVUELVE NADA.
  */
-/* static	void	ft_upper_point(unsigned int i, char *c)dirección c
+/* void	ft_upper_point(unsigned int i, char *c)
 {
 	if (i % 2 == 0)
-		return;
+		return ;
 	if (*c == ' ')
 		*c = '*';
 	if (*c >= 'a' && *c <= 'z')
 		*c = *c - 32;
 } */
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	i;
@@ -42,8 +43,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 /* int	main(void)
 {
-	char	s[] = "buscando en la basura";
-	
+	char	s[] = "buscando en la basura dale";
+
 	ft_striteri(s, &ft_upper_point);
 	printf("\n%s\n\n", s);
 	return (0);

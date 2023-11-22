@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:49:00 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/16 17:34:34 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/20 18:27:47 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	if (!f || !s)
 		return (0);
-	new_s = (char *) malloc (sizeof(char) * ft_strlen(s) + 1);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	new_s = (char *) malloc (sizeof(char) * i + 1);
 	if (new_s == NULL)
 		return (NULL);
 	i = 0;

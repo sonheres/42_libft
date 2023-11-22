@@ -6,12 +6,12 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:52:46 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/17 12:52:35 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/20 18:09:02 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Libft.h"
-#include <fcntl.h>
+/* #include <fcntl.h> */
 /* Envía el carácter ’c’ al file descriptor especificado.
 Parámetros: El carácter a enviar. Y el file descriptor sobre el q. escribir.
 NO DEVUELVE NADA. f_Autorizadas : 'write'
