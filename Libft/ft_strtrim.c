@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:23:52 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/16 17:36:47 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/22 14:02:35 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ while(fin >= 0 ...)-> para que el valor de fin no sea negativo.
 Si me pasan cadena vacía o si coinciden todas las letras y recorre hasta inicio.
 ft_strlen = 0. El valor de 'fin' sería 0 -1 = -1 
 Devuelver la función ft_substr con sus parámetros. len será = fin - ini + 1 */
-int	char_in_str(char c, char	const	*set)
+static char	char_in_str(char c, char	const	*set)
 {
 	int	i;
 
@@ -45,38 +45,99 @@ int	char_in_str(char c, char	const	*set)
 	return (0);
 }
 
+static size_t	ft_slen(const char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+static char	*ft_duplostr(const char *s1)
+{
+	char	*copy;
+	int		i;
+
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+	copy = (char *) malloc (sizeof(char) * i + 1);
+	if (copy == NULL)
+		return (NULL);
+	i = 0;
+	while (s1[i] != '\0')
+	{
+		copy[i] = s1[i];
+		i++;
+	}
+	copy[i] = '\0';
+	return (copy);
+}
+
+static char	*ft_subs(char const *s, unsigned int start, size_t len)
+{
+	size_t	i;
+	size_t	j;
+	char	*substr;
+	size_t	strlength;
+
+	strlength = ft_slen(s);
+	if (start >= strlength || strlength == 0 || len == 0)
+	{
+		substr = (char *)malloc (sizeof(char) * 1);
+		if (substr == NULL)
+			return (NULL);
+		substr[0] = '\0';
+		return (substr);
+	}
+	if (start + len > strlength)
+		len = strlength - start;
+	substr = (char *) malloc (sizeof(char) * (len + 1));
+	if (substr == NULL)
+		return (NULL);
+	i = 0;
+	j = start;
+	while (i < len && s[j] != '\0')
+		substr[i++] = s[j++];
+	substr[i] = '\0';
+	return (substr);
+}
+
 char	*ft_strtrim(char	const	*s1, char	const	*set)
 {
 	size_t	ini;
 	size_t	fin;
 
-	if (ft_strlen(s1) == 0 || ft_strlen(set) == 0)
+	if (!s1 || !set)
+		return (0);
+	if (ft_slen(s1) == 0 || ft_slen(set) == 0)
 	{
-		return (ft_strdup(s1));
+		return (ft_duplostr(s1));
 	}
 	ini = 0;
 	while (s1[ini] != '\0' && char_in_str(s1[ini], set))
 	{
 		ini++;
 	}
-	fin = ft_strlen(s1) - 1;
+	fin = ft_slen(s1) - 1;
 	while (fin >= 0 && char_in_str(s1[fin], set))
 	{
 		fin--;
 	}
-	if (fin <= ini)
+	if (fin < ini)
 	{
 		return ("");
 	}
 	else
-		return (ft_substr(s1, ini, fin - ini + 1));
+		return (ft_subs(s1, ini, fin - ini + 1));
 }
 
-/* int	main(void)
+/*  int	main(void)
 {
-	char	s1[] = "ggggggggggg";
-	char	set[] = "g";
-	
-	printf ("%s\n", ft_strtrim(s1, set));
+	//char	s1[] = "gggasdfirggg";
+	//char	set[] = "g";
+	printf ("%s\n", ft_strtrim("abcdba", "acb"));
 	return (0);
 } */
