@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/22 19:10:32 by sonheres          #+#    #+#             */
-/*   Updated: 2023/10/26 12:01:36 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:33:20 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <ctype.h>
+/* #include <stdio.h>
+#include <ctype.h> */
 
 int	ft_isprint(int c)
 {
@@ -24,13 +24,3 @@ int	ft_isprint(int c)
 		return (0);
 	}
 }
-
-/*int	main(void)
-{
-	int	print;
-
-	print = '~';
-	printf("original: %i\n", isprint(print));
-	printf("propia: %i\n", ft_isprint(print));
-	return (0);
-}*/

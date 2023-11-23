@@ -6,12 +6,11 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 10:47:56 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/21 17:27:30 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:27:59 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "Libft.h"
 /* //BUSCA UNA SUBCADENA(serie de caracteres)dentro de un string
  a lo largo de 'n' bytes.
  > if (needle[0] == '\0')//si el primer caracter de needle es fin de cadena...
@@ -49,31 +48,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/* int	main(void)
-{
-	const char	*cadena = "gilipollas";
-	char		*need = "";
-
-	char *result = strnstr(cadena, need, 0);
-	//mejor declarar la variable (en este caso una puntero a char) 
-	//y asignar valor por separado.
-	if(result != NULL)//cuando el valor no se encuentra en la cadena.
-	{
-		printf("La cadena queda así: %s\n", result);
-	}
-	else
-	{
-		printf(" La subcadena no se encuentra en la cadena.\n");
-	}
-	char *myresult = ft_strnstr(cadena, need, 0);
-
-	if (myresult != NULL)
-	{
-		printf("My cadena queda así: %s \n", myresult);
-	}
-	else
-	{
-		printf("My subcadena no se encuentra en la cadena.\n");
-	}
-} */

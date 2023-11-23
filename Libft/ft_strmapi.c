@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:49:00 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/20 18:27:47 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:27:50 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_s[i] = '\0';
 	return (new_s);
 }
-
-/* int	main(void)
-{
-	const	char	s[] = "Esta leche está buena";
-	printf("\nOriginal : %s\n\n", s);
-	printf("Cambiado : %s\n\n", ft_strmapi(s, &ft_upper));//direcc. función
-	return (0);
-} */

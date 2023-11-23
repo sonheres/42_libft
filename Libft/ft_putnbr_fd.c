@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:39:45 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/20 17:59:01 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:26:32 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,22 +55,3 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_convert (n, fd);
 }
-
-/* int	main(void)
-{
-	int	fd;
-	int	n;
-
-	//n = -2147483648;
-	//n = 5874985;
-	n = -85694;
-	fd = open("putnbr_fd.txt", O_CREAT | O_APPEND | O_WRONLY, 0666);
-	if (fd == -1)
-	{
-		perror("Error al abrir el archivo");
-		return (1);
-	}
-	ft_putnbr_fd(n, fd);
-	close(fd);
-	return (0);
-} */

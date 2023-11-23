@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 09:14:37 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/21 10:57:06 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:32:37 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,12 +137,3 @@ char	*ft_itoa(int n)
 	free (numstr);
 	return (reverstr);
 }
-
-/* int	main(void)
-{
-	int	n;
-
-	n = 0;
-	printf ("El número es: %s\n", ft_itoa(n));
-	return (0);
-} */

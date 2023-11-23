@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 18:40:08 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/22 11:06:14 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:25:57 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,19 +41,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-/*int	main(void)
-{
-	char	str[] = "Mamma mia";
-	char	*src;
-
-	//str = "H";
-	src = (char *) malloc (sizeof(char) * (ft_strlen(str) + 1));
-	memcpy(src, str, 47);
-	//OJO LA SIGUIENTE LINEA ESTAn PARTIDAS
-	printf("src despues de ft_memmove:\n%s\n", 
-	ft_memmove((void *)src + -10, src, 3));
-	//printf("src despues de memmove:\n%s\n", 
-	memmove((void *)src - 10, src, 3));
-	return (0);
-}*/

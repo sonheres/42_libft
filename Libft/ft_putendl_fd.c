@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 13:16:12 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/20 17:58:32 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:26:25 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,19 +29,3 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, "\n", 1);
 	}
 }
-
-/* int	main(void)
-{
-	//char	str[] = "la cuchara del cajón";
-	int	fd;
-
-	fd = open("putendl_fd.txt", O_CREAT | O_APPEND | O_WRONLY, 0666);
-	if (fd == -1)
-	{
-		perror("Error al abrir el archivo");
-		return (1);
-	}
-	ft_putendl_fd(NULL, fd);
-	close(fd);
-	return (0);
-} */

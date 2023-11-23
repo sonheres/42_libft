@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:07 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/09 11:21:54 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:27:04 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,3 @@ char	*ft_strjoin(char	const	*s1, char	const	*s2)
 	newstr[j] = '\0';
 	return (newstr);
 }
-
-/* int	main (void)
-{
-	char	s1[] = "Hola hola hola hola...";
-	char	s2[] = "no vengas sola...";
-
-	printf ("%s\n", ft_strjoin(s1, s2));
-	return (0);
-} */

@@ -6,13 +6,11 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 15:06:53 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/21 21:22:15 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:22:05 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "Libft.h"
 /* CONVIERTE UNA CADENA ASCII en 'int'.
 Permite realizar operaciones con los 'int'.
 result = 0; //no es un contador. Se acumulan los dígitos aunque parte de 0
@@ -76,15 +74,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-
-/* int main(void)
-{
-	const char str[] = "0 49";
-	// const char  str[] = "asrd";
-	// const char str[] = "   8+5";
-	// const char	str[] = "   0";
-	// const char  str[] = " -12";
-	printf("original = %i\n", atoi(str));
-	printf("my = %i\n", ft_atoi(str));
-	return (0);
-} */

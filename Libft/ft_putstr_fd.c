@@ -6,7 +6,7 @@
 /*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 12:53:26 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/20 18:05:10 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 09:26:37 by sonheres         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,3 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, s, i);
 	}
 }
-
-/* int	main(void)
-{
-	char	str[] = "la abuelita conductora";
-	int	fd;
-
-	fd = open("putchar_fd.txt", O_CREAT | O_APPEND | O_WRONLY, 0666);
-	if (fd == -1)
-	{
-		perror("Error al abrir el archivo");
-		return (1);
-	}
-	ft_putstr_fd(str, fd);
-	close(fd);
-	return (0);
-} */
