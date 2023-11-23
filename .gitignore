@@ -1,8 +1,6 @@
 **/output
 .DS_Store
 *.dSYM/*
-.vscode
+.vscode/*
 .o
 .a
-.vscode/settings.json
-
