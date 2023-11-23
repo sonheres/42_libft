@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:49:00 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:27:50 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:54:27 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@ DEVUELVE: La string creada.  NULL si falla la reserva de memoria.
 FT_UPPER. Cambia de minúsculas a mayúsculas.
 //para que no de error de no usar la (i) se pondría (void)i;
 > if (i % 2 == 0)//si el módulo de dividir entre 2 = 0, es par
-> return (c);//tener en cuenta que empieza en 0. Cambia las impares
- */
+> return (c);//tener en cuenta que empieza en 0. Cambia las impares */
 /* static	char	ft_upper(unsigned int i, char c)
 {
 	if (i % 2 == 0)
@@ -53,3 +52,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	new_s[i] = '\0';
 	return (new_s);
 }
+/* int	main(void)
+{
+	//const	char	s[] = "Esta leche está buena";
+	printf("\nOriginal : %s\n\n", NULL);
+	printf("Cambiado : %s\n\n", ft_strmapi(NULL, &ft_upper));//direcc. función
+	return (0);
+} */

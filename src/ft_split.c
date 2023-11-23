@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 10:43:24 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:26:43 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:25:58 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,3 +108,22 @@ char	**ft_split(char const *s, char c)
 	array[j] = 0;
 	return (array);
 }
+/* int	main(void)
+{
+	char	s[] = "-zapato-gato----julio-agosto-mosto";
+	//char	s[] = "Hleo!e";
+	char	c;
+	char	**res;
+	int		i;
+
+	i = 0;
+	c = '-';
+	//res = (char **) malloc (sizeof(char *) * 100);
+	res = ft_split(s, c);
+	while (res && res[i])
+	{
+		printf ("%s\n", res[i]);
+		i++;
+	}
+	return (0);
+} */

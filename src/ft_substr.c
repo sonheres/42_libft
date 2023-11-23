@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:05:49 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:28:22 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 11:38:03 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	j;
 	char	*substr;
-	size_t	strlength;
 
-	strlength = ft_strlen(s);
-	if (start >= strlength || strlength == 0 || len == 0)
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s) || ft_strlen(s) == 0 || len == 0)
 	{
 		substr = (char *)malloc (sizeof(char) * 1);
 		if (substr == NULL)
@@ -45,8 +45,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		substr[0] = '\0';
 		return (substr);
 	}
-	if (start + len > strlength)
-		len = strlength - start;
+	if (start + len > ft_strlen(s))
+		len = ft_strlen(s) - start;
 	substr = (char *) malloc (sizeof(char) * (len + 1));
 	if (substr == NULL)
 		return (NULL);
@@ -57,3 +57,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
+/* int main (void)
+{
+	printf("%s\n", ft_substr("Hola ke tel pos mu bien", 2, 8));
+	return (0);
+} */

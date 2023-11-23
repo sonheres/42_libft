@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:23:52 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:28:17 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 11:57:10 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,3 +133,11 @@ char	*ft_strtrim(char	const	*s1, char	const	*set)
 	else
 		return (ft_subs(s1, ini, fin - ini + 1));
 }
+
+/* int	main(void)
+{
+	//char	s1[] = "gggasdfirggg";
+	//char	set[] = "g";
+	printf ("%s\n", ft_strtrim(NULL, NULL));
+	return (0);
+} */

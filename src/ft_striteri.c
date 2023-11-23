@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:37:57 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:26:58 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 12:43:05 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,11 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		}
 	}
 }
+/* int	main(void)
+{
+	//char	s[] = "buscando en la basura dale";
+
+	ft_striteri(NULL, &ft_upper_point);
+	printf("\n%s\n\n", NULL);
+	return (0);
+} */

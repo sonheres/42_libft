@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:07 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:27:04 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 13:08:02 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ Asigno valor a la variable que recoge la longitud nueva.
 -> newlen = ft_strlen(s1) + ft_strlen(s2)
 Reservo memoria para 'newstr'.
 Bucle para copiar. Inicializo dos variables = 0. Primero pasar por s1 y después
-por s2. Antes i = 0.
-*/
+por s2. Antes i = 0. */
 char	*ft_strjoin(char	const	*s1, char	const	*s2)
 {
 	char	*newstr;
@@ -48,3 +47,11 @@ char	*ft_strjoin(char	const	*s1, char	const	*s2)
 	newstr[j] = '\0';
 	return (newstr);
 }
+/* int	main(void)
+{
+	//char	s1[] = "NULL";
+	//char	s2[] = "no vengas sola...";
+
+	printf ("%s\n", ft_strjoin(NULL, NULL));
+	return (0);
+} */
