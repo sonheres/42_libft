@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:51:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:26:53 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 13:20:45 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,15 @@ char	*ft_strdup(const char *s1)
 	copy[i] = '\0';
 	return (copy);
 }
+/* int	main(void)
+{
+	//const	char	s1[] = "Living la vida loca";
+	//char	*str;
+	//char	*mystr;
+
+	//str = strdup(s1);
+	printf("f_original: %s\n", NULL);
+	//mystr = ft_strdup(s1);
+	printf("f_my: %s\n", NULL);
+	return(0);
+} */
