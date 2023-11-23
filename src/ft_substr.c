@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 18:05:49 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 11:38:03 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:58:07 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Crea una subcadena. Devuelve un puntero de la subcadena desde la 
 posición 'start'.Creo una variable size_t 'strlength' para guardar 
 longitud de 's'. Así no tengo llamar tantas veces a ft_strlen.

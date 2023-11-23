@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 10:43:24 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:25:58 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:52:09 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Reserva(utilizando malloc un array de strings resultante de separar 
 la string’s’ en substrings utilizando el caracter’c’ como delimitador. 
 El array debe terminar con un puntero NULL.

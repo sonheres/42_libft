@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:49:00 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:54:27 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:55:38 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Genera una nueva string con el resultado del uso sucesivo de’f’en 
 cada caracter. A cada carácter de la string ’s’ aplica la función ’f’.
 Da como parámetro el índice del caracter dentro de 's'.

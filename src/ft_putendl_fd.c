@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 13:16:12 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:51:31 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:50:26 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* #include <fcntl.h> */
 /* Envía la string ’s’al file descriptor dado, seguido de un salto de línea.
 PARÁMETROS : La str a enviar y el file descriptor sobre el q. escribir.

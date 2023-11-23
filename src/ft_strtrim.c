@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:23:52 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 11:57:10 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:57:59 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Elimina los caracteres de la string 'set' dentro de la string 's1'.
 Desde el principio y desde el final hasta que encuentre un caracter que no
 pertenezca a 'set'.

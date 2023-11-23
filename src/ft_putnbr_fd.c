@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:39:45 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:52:52 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:50:40 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* #include <fcntl.h> */
 /* Envía el número ’n’al file descriptor dado.
 PARÁMETROS: El número 'n' que enviar. Y el 'fd' sobre el q. escribir.

@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 09:14:37 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:35:19 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:45:21 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /*Convierte un número entero a una cadena de caracteres.
 1. Calculo la longitud para reservar memoria. (números + signo si hay +'\0')
 2. While -> división y módulo para sacar los str[i]

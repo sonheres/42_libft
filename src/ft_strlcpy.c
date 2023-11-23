@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:00:28 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:27:39 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:54:37 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* ///REVISAR EDGE CASES ANTES DE LA ENTREGA!!!
 Devuelve el tamaño de la cadena de origen.
 Da igual el tamaño de las cadenas. 
@@ -49,3 +49,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[cont] = '\0';
 	return (len_src);
 }
+/* int	main(void)
+{
+	char			str[] = "Ojete calores son amores";
+	char			dest[50];
+	unsigned int	size;
+	size_t			i;
+
+	size = 13;
+	//i = strlcpy(dest, str, size);
+	i = ft_strlcpy(dest, str, size);
+	printf("srlcpy i = %lu\n", i);
+	printf("srlcpy dest = %s\n", dest);
+	return (0);
+} */

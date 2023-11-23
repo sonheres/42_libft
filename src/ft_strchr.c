@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 13:40:47 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:26:48 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:53:00 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Devuelve la cadena desde la primera posición donde 
 se encuentra la letra que metemos como parámetro.
 //const char* quiere decir que es un string de solo lectura.
@@ -38,3 +38,13 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
+/* int	main(void)
+{
+	const char	str[] = "";
+	int			c;
+
+	c = 'e' + 1024;
+	printf("Funcion original:     %s\n", strchr(str, c));
+	printf("Funcion propio hecho: %s\n", ft_strchr(str, c));
+	return (0);
+} */

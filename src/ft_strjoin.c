@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 10:11:07 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 13:08:02 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:53:20 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Devuelve una nueva string. NULL si falla la reserva de mmria. 
 Declaro una variable para la longitud de la nueva str, otra para que será el 
 contador de s1 y s2 [i], y otra que será el contador de 'newstr'[j].

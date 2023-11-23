@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 15:06:53 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:22:05 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:38:20 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* CONVIERTE UNA CADENA ASCII en 'int'.
 Permite realizar operaciones con los 'int'.
 result = 0; //no es un contador. Se acumulan los dígitos aunque parte de 0
 return (result * sign);// que devuelva el resultado en el bucle de los números.
 					Mientras haya números, que siga.return (result * sign);*/
-
 static int	ft_extract_number(const char *str)
 {
 	int	i;
@@ -74,3 +73,14 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+/*  int main(void)
+{
+	const char str[] = "0 49";
+	// const char  str[] = "asrd";
+	// const char str[] = "   8+5";
+	// const char	str[] = "   0";
+	// const char  str[] = " -12";
+	printf("original = %i\n", atoi(NULL));
+	printf("my = %i\n", ft_atoi(NULL));
+	return (0);
+}  */

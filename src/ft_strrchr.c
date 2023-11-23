@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 17:43:52 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:28:10 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:57:40 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /*Devuelve la cadena desde la ÚLTIMA posición donde se encuentra la letra 
 que metemos como parámetro.
 //declaro una variable para ir guardando la posición de las coincidencias.
@@ -42,3 +42,16 @@ char	*ft_strrchr(const char *s, int c)
 	else
 		return (result);
 }
+/* int	main(void)
+{
+	const char	str[] = "Se cago en Missuri";
+	int			c;
+
+	c = '\0';// + 256;
+	//c = 333;
+	printf ("%i\n", c);
+	printf("Funcion original =     %s\n", strrchr(str, c));
+	printf("Funcion hecho propio = %s\n%p", ft_strrchr(str, c), 
+	ft_strrchr(str, c));
+	return (0);
+} */

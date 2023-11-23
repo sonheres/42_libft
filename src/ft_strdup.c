@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 16:51:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 13:20:45 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:53:11 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Asigna la memoria necesaria para realizar una copia de s1.
 Devuelve un puntero a ella.
 Si no ha suficiente memoria devuelve NULL. 

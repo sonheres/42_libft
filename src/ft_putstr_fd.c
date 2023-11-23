@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 12:53:26 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:50:03 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:51:16 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* #include <fcntl.h> */
 /* Envía la string ’s’ al file descriptor especificado.
 Parámetros: La str a enviar. Y el file descriptor sobre el q. escribir.

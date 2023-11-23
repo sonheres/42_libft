@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sonheres <sonheres@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:46:59 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 09:27:09 by sonheres         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:54:44 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* Si la cadena a la que apunta input es controlada por el usuario 
 y no existe ningún límite en el número de caracteres  al usar la función strcat 
 acabaremos sobrepansando el tamaño de buf, y escribiendo en direcciones de 
@@ -51,3 +51,18 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (res + i3);
 	return (res + dstsize);
 }
+/* int	main(void)
+{
+	char			src[] = "pajaro fluvial";
+	char			dest[30] = "Eres un ";
+	size_t	size;
+
+	size = -1;
+	//printf("%lu\n", size);
+	//OJO LINEAS PARTIDAS
+	printf ("Funcion original\nsize = %lu\ndest = \
+	%s\nres = %lu\n", size, dest, strlcat(dest, src, size));
+	printf ("Mi funcion\nsize = %lu\ndest = %s\nres = \
+	%lu\n", size, dest, ft_strlcat(dest, src, size));
+	return (0);
+} */

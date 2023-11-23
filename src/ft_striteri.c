@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:37:57 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:43:05 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:53:16 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /*Aplica a cada caracter de la str 's' la función 'f' dando como parámetros el
 índice de cada carácter dentro de ’s’ y la dirección del propio carácter,
 que podrá modificarse si es necesario.

@@ -6,11 +6,11 @@
 /*   By: sohernan <sohernan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:52:46 by sonheres          #+#    #+#             */
-/*   Updated: 2023/11/23 12:50:17 by sohernan         ###   ########.fr       */
+/*   Updated: 2023/11/23 15:49:59 by sohernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Libft.h"
+#include "libft.h"
 /* #include <fcntl.h> */
 /* Envía el carácter ’c’ al file descriptor especificado.
 Parámetros: El carácter a enviar. Y el file descriptor sobre el q. escribir.
